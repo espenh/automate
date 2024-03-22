@@ -2,6 +2,8 @@
 
 Bot example for car industry use-case. Currently just ingesting a bunch of Toyota brochures into chroma.
 
+![image](https://github.com/espenh/automate/assets/973493/41b69f2d-f3c3-4298-95c9-48d9ebd5d86e)
+
 * Embeddings stored in [chroma](https://www.trychroma.com/) hosted locally.
 * Uses [langchain](https://github.com/langchain-ai/langchainjs) to bridge GPT-4 and vector database.
 * A basic custom front-end with message viewer that supports markdown (render tables etc.).
