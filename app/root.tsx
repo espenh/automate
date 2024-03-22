@@ -8,8 +8,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import '@radix-ui/themes/styles.css';
-import { Theme } from '@radix-ui/themes';
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -26,7 +26,7 @@ export default function App() {
       </head>
       <body style={{ height: "100%", margin: 0 }}>
         <Theme
-          appearance="dark"
+          appearance="light"
           accentColor="blue"
           grayColor="gray"
           panelBackground="solid"

@@ -12,7 +12,7 @@ export const AssistantMessage: React.FC<{ message: AssistantChatMessage; }> = ({
 
   return <><Avatar size="1" fallback={<MagicWandIcon />} variant="solid" />
     <Flex direction="column">
-      <Text size="1" weight="bold">EnergyBot</Text>
+      <Text size="1" weight="bold">AutoMate</Text>
       <MarkdownView markdown={message.response.text} />
       {hasSources && <AssistantSourceDeclaration sourceList={message.response.sourceDocuments} />}
     </Flex>
@@ -56,7 +56,7 @@ export const AssistantThinkingMessage: React.FC = () => {
     <Flex align="start" gap={"4"}>
       <><Avatar size="1" fallback={<MagicWandIcon />} variant="solid" />
         <Flex direction="column">
-          <Text size="1" weight="bold">EnergyBot</Text>
+          <Text size="1" weight="bold">AutoMate</Text>
           <Box pt="2">
             <Spinner size="2" />
           </Box>

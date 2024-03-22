@@ -6,7 +6,7 @@ import { getDocument, version } from "pdfjs-dist";
 import { Chroma } from "@langchain/community/vectorstores/chroma"
 import fs from "fs";
 
-// This script ingests all pdfs in the docs folder into Pinecone.
+// This script ingests all pdfs in the docs folder into Chroma.
 
 const docsFolder = 'docs';
 
@@ -46,9 +46,9 @@ export const run = async () => {
       dimensions: 1024,
     });
 
-    console.log("Ingesting documents into Pinecone")
+    console.log("Ingesting documents into Chroma")
     await Chroma.fromDocuments(docs, embeddings, {
-      collectionName: "a-test-collection",
+      collectionName: "automate",
       url: "http://localhost:8000",
       collectionMetadata: {
         "hnsw:space": "cosine" // https://docs.trychroma.com/usage-guide#changing-the-distance-function
